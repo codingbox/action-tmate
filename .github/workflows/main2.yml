@@ -22,7 +22,6 @@ jobs:
       matrix:
         os: [ubuntu-latest, ubuntu-20.10, ubuntu-18.04]
         python: [2.7, 3.6, 3.7, 3.8, 3.9, 3.10]
-        runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
