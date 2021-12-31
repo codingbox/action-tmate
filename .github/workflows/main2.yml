@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CI2
 
 # Controls when the workflow will run
 on:
@@ -23,8 +23,6 @@ jobs:
         os: [ubuntu-latest, ubuntu-20.10, ubuntu-18.04]
         python: [2.7, 3.6, 3.7, 3.8, 3.9, 3.10]
         runs-on: ${{ matrix.os }}
-    env:
-      JDK_VERSION:  ${{ matrix.python }}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
